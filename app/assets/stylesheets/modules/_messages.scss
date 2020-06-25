@@ -10,6 +10,8 @@
   height: 100vh;
   width: 300px;
   background-color: #253141;
+  marker-start: none;
+
 
     &__user{
       height: 100px;
@@ -31,6 +33,7 @@
     &__name{
       font-size: 16px;
       color: #ffffff;
+      font-weight: bold;
     }
     &__btn{
       width: 60px;
@@ -42,13 +45,36 @@
       &--edit{
         color: #ffffff;
         margin-right: 5px;
-
       } 
       &--cog{
         color: #ffffff;
-
       }
     }
+    &__group{
+
+    }
+    &__group-name{
+      height: 20px;
+      margin-left: 20px;
+      margin-bottom: 5px;
+      color: #ffffff;
+      font-weight: bold;
+
+
+
+    }
+    &__group-message{
+      height: 11px;
+      margin-left: 20px;
+      color: #ffffff;
+      font-size: 11px;
+      margin-bottom: 40px;
+      font-weight: bold;
+
+
+
+    }
+
 }
 
 .Chat-main{
@@ -58,7 +84,46 @@
     &__group{
       height: 100px;
       border-bottom: #eeeeee;
+      margin-right: 40px;
+      margin-left: 40px;
     }
+    &__grouptop{
+      display: flex;
+      justify-content: space-between;
+      
+
+
+
+
+    }
+    &__grouptop-name{
+        color: #333;
+        font-size: 20px;
+        margin-top: 35px;
+    }
+    &__grouptop-edit{
+      display: block;
+      border: 1px solid #38AEF0;
+      color: #38AEF0;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 28px;
+      padding: 0 20px;
+      text-decoration: none;
+
+      }
+    &__groupbottom{
+      color: #999;
+      display: flex;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+    
+
+
+
+
+
     &__message{
       height: calc(100vh - 190px);
       background-color: #fafafa;
