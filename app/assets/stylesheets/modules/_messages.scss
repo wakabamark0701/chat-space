@@ -128,6 +128,32 @@
       height: calc(100vh - 190px);
       background-color: #fafafa;
     }
+    &__messageinfo{
+      display: flex;
+      margin: 35px 0 12px 40px;
+
+
+    }
+
+    &__messageinfo-name{
+      color: #333333;
+      font-size: 16px;
+      margin-right: 5px;
+    
+    }
+
+    &__messageinfo-daytime{
+      color: #999999;
+      font-size: 12px;
+
+    }
+
+    &__message-text{
+      color: #434a54;
+      font-size: 14px;
+      margin: 0 0 46px 40px;
+
+    }
     &__form{
       height: 90px;
       background-color: #d2d2d2;
