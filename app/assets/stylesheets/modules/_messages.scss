@@ -20,9 +20,11 @@
       justify-content: center;
 
     }
-    &__group{
-      height: calc(100vh - 100px);
+    &__grouplist{
       background-color: #2f3e51;
+      height: calc(100vh - 100px);
+      padding: 0 20px;
+      overflow: scroll;
     }
     &__userbox{
       height: 20px;
@@ -51,28 +53,22 @@
       }
     }
     &__group{
+      padding:20px 0 40px ;
+      
 
     }
     &__group-name{
       height: 20px;
-      margin-left: 20px;
       margin-bottom: 5px;
       color: #ffffff;
       font-weight: bold;
 
-
-
     }
     &__group-message{
       height: 11px;
-      margin-left: 20px;
       color: #ffffff;
       font-size: 11px;
-      margin-bottom: 40px;
       font-weight: bold;
-
-
-
     }
 
 }
@@ -90,10 +86,6 @@
     &__grouptop{
       display: flex;
       justify-content: space-between;
-      
-
-
-
 
     }
     &__grouptop-name{
@@ -118,11 +110,6 @@
       font-size: 12px;
       margin-top: 15px;
     }
-    
-
-
-
-
 
     &__message{
       height: calc(100vh - 190px);
@@ -130,7 +117,7 @@
     }
     &__messageinfo{
       display: flex;
-      margin: 35px 0 12px 40px;
+      padding: 35px 0 12px 40px;
 
 
     }
@@ -154,12 +141,51 @@
       margin: 0 0 46px 40px;
 
     }
-    &__form{
+    &__post{
       height: 90px;
-      background-color: #d2d2d2;
+      background-color: #d2d2d2;  
+      padding: 20px 50px 20px 40px;
+    }
+
+    &__post-contents{
+      display: flex;
+      justify-content: space-between;
 
 
     }
+    &__post-form{
+      display: flex;
+      height: 50px;
+      box-sizing: border-box;
+      width: 100%;
+      position: relative;
+      margin-right: 15px;
+    }
+    &__post-text{
+      border:  1px ;
+      width: 100%;
+      padding-left: 10px;
+    }
+    &__post-img{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 25px;
+
+      &__file{
+        display: none;
+      }
+
+    }
+    &__post-send{
+      background-color: #38aef0;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 10px 30px;
+      border: none;
+
+    }
+
 }
 
 

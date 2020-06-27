@@ -20,6 +20,13 @@
     .Chat-main__message-text
       おはよう
 
-  .Chat-main__form
-  
+  .Chat-main__post
+    %form.Chat-main__post-contents
+      .Chat-main__post-form        
+        %input{type:"text", class: "Chat-main__post-text", placeholder:"type a message"}
+        %label{class: "Chat-main__post-img"}
+          = icon('fas', 'image')
+          %input{type:"file", class: "Chat-main__post-img__file"}
+      %input{type: "submit", class: "Chat-main__post-send", value:"Send"}    
+      
 
