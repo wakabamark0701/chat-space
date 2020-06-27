@@ -1,0 +1,32 @@
+.Chat-main
+  .Chat-main__group
+    .Chat-main__grouptop
+      .Chat-main__grouptop-name
+        techcamp      
+      = link_to "URL", class: "Chat-main__grouptop-edit" do 
+        Edit
+    .Chat-main__groupbottom
+      Member : まさ
+  
+
+
+  .Chat-main__message
+    .Chat-main__messageinfo
+      .Chat-main__messageinfo-name
+        まさ
+      .Chat-main__messageinfo-daytime
+        xxxx/xx/xx/(xxx) xx:xx:xx
+
+    .Chat-main__message-text
+      おはよう
+
+  .Chat-main__post
+    %form.Chat-main__post-contents
+      .Chat-main__post-form        
+        %input{type:"text", class: "Chat-main__post-text", placeholder:"type a message"}
+        %label{class: "Chat-main__post-img"}
+          = icon('fas', 'image')
+          %input{type:"file", class: "Chat-main__post-img__file"}
+      %input{type: "submit", class: "Chat-main__post-send", value:"Send"}    
+      
+
