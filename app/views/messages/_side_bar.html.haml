@@ -1,12 +1,12 @@
 .Side-bar
   .Side-bar__user
     .Side-bar__userbox
-      .Side-bar__name
-        まさ
+      %h3.Side-bar__name
+        = current_user.name
       .Side-bar__btn
         = link_to "#", class: "Side-bar__btn--edit" do
           = icon('far', 'edit')
-        = link_to "%", class: " Side-bar__btn--cog" do
+        = link_to edit_user_path(current_user), class: " Side-bar__btn--cog" do
           = icon('fas', 'cog')
         
   .Side-bar__grouplist
