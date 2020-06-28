@@ -38,9 +38,9 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null: false|
-|e-mail|integer|null: false|
-|password|integer|null: false|
+|name|string|null: false|
+|e-mail|string|null: false|
+|password|string|null: false|
 | add_index :users,  :name|
 
 ## Association
@@ -52,7 +52,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null: false|
+|name|string|null: false|
 
 ## Association
 - has_many :users, through:users_groups
