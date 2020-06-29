@@ -53,6 +53,8 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
+| add_index :groups,  :name|
+
 
 ## Association
 - has_many :users, through:users_groups
