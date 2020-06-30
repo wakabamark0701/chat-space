@@ -2,12 +2,12 @@
   .Chat-main__group
     .Chat-main__grouptop
       .Chat-main__grouptop-name
-        techcamp      
-      = link_to "URL", class: "Chat-main__grouptop-edit" do 
+        =@group.name      
+      = link_to edit_group_path(@group), class: "Chat-main__grouptop-edit" do 
         Edit
     .Chat-main__groupbottom
-      Member : まさ
-  
+      ="Member:" + @group.users.pluck(:name).join(", ")
+ 
 
 
   .Chat-main__message
