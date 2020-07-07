@@ -57,7 +57,7 @@ $(function(){
       $('.Chat-main__post-send').attr('disabled', false);　
     })
     .fail(function() {
-    alert("メッセージ送信に失敗しました");
+      alert("メッセージ送信に失敗しました");
   });
   });
 });
