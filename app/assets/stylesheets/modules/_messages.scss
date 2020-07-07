@@ -114,10 +114,12 @@
     &__message{
       height: calc(100vh - 190px);
       background-color: #fafafa;
+      overflow: scroll;
     }
     &__messageinfo{
       display: flex;
       padding: 35px 0 12px 40px;
+      
 
 
     }

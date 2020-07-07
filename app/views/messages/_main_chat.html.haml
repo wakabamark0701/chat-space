@@ -8,8 +8,6 @@
     .Chat-main__groupbottom
       ="Member:" + @group.users.pluck(:name).join(", ")
  
-
-
   .Chat-main__message
     - @messages.each do |message|
       .Chat-main__messageinfo
