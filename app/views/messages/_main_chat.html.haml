@@ -10,7 +10,7 @@
  
   .Chat-main__message
     - @messages.each do |message|
-      .Chat-main__messageinfo
+      .Chat-main__messageinfo{data: {message: {id: message.id}}}
         .Chat-main__messageinfo-name
           = message.user.name
         .Chat-main__messageinfo-daytime
